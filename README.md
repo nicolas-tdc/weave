@@ -3,6 +3,7 @@
 ## Create a weave application
 
 - Clone repository to your application folder
+*Name and chose a location for your app*
 ```bash
 git clone git@github.com:nicolas-tdc/weave.git ./path/to/my-app
 ```
@@ -22,7 +23,7 @@ rm .git
 ```
 
 - Copy environment file
-*This environment file will provide common variables to all services containers.*
+*This environment file will provide common variables to all services containers*
 ```bash
 cp .env.dist .env
 ```
