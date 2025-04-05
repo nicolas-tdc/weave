@@ -1,6 +1,6 @@
-# weave-app
+# weave
 
-## Setup
+## Create a weave application
 
 - Clone repository to your application folder
 ```bash
@@ -9,9 +9,16 @@ git clone git@github.com:nicolas-tdc/weave.git ./path/to/my-app
 
 **Move to my_app application's root directory**
 
-- Remove weave-app git remote
+- Remove weave git remote
+*This will unlink your directory from weave's repository*
 ```bash
 rm .git
+```
+
+- Update weave
+*This will install and update weave*
+```bash
+./weave-update.sh
 ```
 
 - Copy environment file
@@ -21,7 +28,7 @@ cp .env.dist .env
 ```
 
 - Add services
-*Select and name your service to add*
+*This will prompt you to select and name a new service for the application*
 ```bash
 ./weave.sh add
 ```
