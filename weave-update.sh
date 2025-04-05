@@ -20,6 +20,7 @@ git submodule foreach '
 if [ -f "./weave-core/weave.sh.dist" ]; then
     echo -e "\e[32mCopying updated weave.sh...\e[0m"
     cp ./weave-core/weave.sh.dist ./weave.sh
+    chmod 755 ./weave.sh
 fi
 
 echo "All submodules updated successfully!"
