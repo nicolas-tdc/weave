@@ -5,7 +5,7 @@ set -e
 
 # This script is used to update weave-core.
 
-echo -e "\e[32mUpdating weave-core...\e[0m"
+echo -e "\e[32mUpdating weave-core and weave.sh...\e[0m"
 
 # Ensure submodules are initialized and updated
 git submodule update --init --recursive
@@ -23,4 +23,4 @@ if [ -f "./weave-core/weave.sh.dist" ]; then
     chmod 755 ./weave.sh
 fi
 
-echo "All submodules updated successfully!"
+echo "weave-core and weave.sh updated successfully!"
