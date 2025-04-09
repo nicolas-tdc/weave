@@ -2,27 +2,22 @@
 
 ## Initialize your application
 
-- Clone weave repository to your application's folder
-
-*Name and chose a location for your app*
+- Clone weave repository to your chosen application's folder
 ```bash
 git clone git@github.com:nicolas-tdc/weave.git ./path/to/my-app
 ```
 
-- Move to 'my-app' application's root directory
+- Move to your new application's root directory
 ```bash
 cd ./path/to/my-app
 ```
 
-- Remove weave git remote
-
-*This will unlink your directory from weave's repository*
+- Unlink your application from weave's git repository
 ```bash
 rm -rf .git
 ```
 
-- Initialize your git project
-*Create your own application repository and execute initial git setup*
+- Link your application to your own application repository
 ```bash
 git init
 git add .
@@ -35,14 +30,14 @@ git push -u origin main
 ## Setup your application   
 *To do after initializing your application or after cloning your own application repository*
 
-- Update weave
-*This will install and update weave*
+- Install and update weave
 ```bash
 ./weave-update.sh
 ```
 
 - Copy environment file
-*This environment file will provide common variables to all services containers*
+
+*This environment file will provide your custom common variables to all services containers*
 ```bash
 cp .env.dist .env
 ```
@@ -50,7 +45,8 @@ cp .env.dist .env
 ## Add services to your application
 
 - Add services
-*This will prompt you to select and name a new service for the application*
+
+*This will prompt you to select and name a new service for your application*
 ```bash
 ./weave.sh add
 ```
@@ -58,9 +54,10 @@ See [weave-core](https://github.com/nicolas-tdc/weave-core) for available servic
 
 - Setup services
 
-*See instructions found in README.md files of your added services*
+*See instructions found in the readme files of your added services*
 
-[weave-service default setup and commands](./weave/default-service/README.md)
+*Or in weave default service readme file*
+[weave-service default readme](./weave/default-service/README.md)
 
 ## List of available commands
 **Execute from application's root directory**
