@@ -23,7 +23,7 @@ git init
 git add .
 git commit -m "Initial commit"
 git branch -M main
-git remote add origin <you_github_repositoty>
+git remote add origin <your_github_repository>
 git push -u origin main
 ```
 
@@ -58,7 +58,7 @@ See instructions found in the readme files of your added services
 
 *Or in weave's default service's readme file*
 
-[default-service-readme](./weave/default-service/README.md)
+[default-service-readme](./weave-core/default-service/README.md)
 
 ## List of available commands
 **Execute from application's root directory**
