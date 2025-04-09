@@ -4,12 +4,12 @@
 
 - Clone weave repository to your chosen application's folder
 ```bash
-git clone git@github.com:nicolas-tdc/weave.git ./path/to/my-app
+git clone git@github.com:nicolas-tdc/weave.git <path/to/my-app>
 ```
 
 - Move to your new application's root directory
 ```bash
-cd ./path/to/my-app
+cd <path/to/my-app>
 ```
 
 - Unlink your application from weave's git repository
@@ -54,10 +54,11 @@ See [weave-core](https://github.com/nicolas-tdc/weave-core) for available servic
 
 - Setup services
 
-*See instructions found in the readme files of your added services*
+See instructions found in the readme files of your added services
 
-*Or in weave default service readme file*
-[weave-service default readme](./weave/default-service/README.md)
+*Or in weave's default service's readme file*
+
+[default-service-readme](./weave/default-service/README.md)
 
 ## List of available commands
 **Execute from application's root directory**
