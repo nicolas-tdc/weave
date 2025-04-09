@@ -46,11 +46,11 @@ update_git_submodules() {
     # Update the submodules
     git submodule update --init --recursive
     # Pull the latest changes from the main branch of each submodule
-    git submodule foreach '
-        echo "\e[33mUpdating $name...\e[0m"
-        git checkout main || { echo -e "\e[31mFailed to checkout main branch in $name\e[0m"; exit 1; }
-        git pull origin main || { echo -e "\e[31mFailed to pull from main in $name\e[0m"; exit 1; }
-        echo "\e[32m$name updated successfully!\e[0m"]
+    git submodule foreach --recursive '
+        echo "Updating submodule: $name"
+        git fetch
+        git checkout main 2>/dev/null || git checkout master 2>/dev/null || echo "No main/master branch for $name"
+        git pull || echo "Failed to pull in $name"
     '
 }
 
