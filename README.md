@@ -1,6 +1,6 @@
 # weave
 
-## Create a weave application
+## Initialize your application
 
 - Clone repository to your application folder
 *Name and chose a location for your app*
@@ -8,13 +8,30 @@
 git clone git@github.com:nicolas-tdc/weave.git ./path/to/my-app
 ```
 
-**Move to my_app application's root directory**
+- Move to 'my-app' application's root directory
+```bash
+cd ./path/to/my-app
+```
 
 - Remove weave git remote
 *This will unlink your directory from weave's repository*
 ```bash
-rm .git
+rm -rf .git
 ```
+
+- Initialize your git project
+*Create your own application repository and execute initial git setup*
+```bash
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin <you_github_repositoty>
+git push -u origin main
+```
+
+## Setup your application
+*To do after initialization or clone*
 
 - Update weave
 *This will install and update weave*
@@ -28,6 +45,8 @@ rm .git
 cp .env.dist .env
 ```
 
+## Add services to your application
+
 - Add services
 *This will prompt you to select and name a new service for the application*
 ```bash
@@ -35,11 +54,12 @@ cp .env.dist .env
 ```
 See [weave-core](https://github.com/nicolas-tdc/weave-core) for available services.
 
-- Setup services: see instructions found in README.md files of your added services
-[See weave-service default setup and commands](./weave/default-service/README.md)
+- Setup services
+*See instructions found in README.md files of your added services*
+[weave-service default setup and commands](./weave/default-service/README.md)
 
-## Commands
-**From application's root directory**
+## List of available commands
+**Execute from application's root directory**
 
 - Start application
 *Starts the application and all its services*
@@ -66,9 +86,15 @@ See [weave-core](https://github.com/nicolas-tdc/weave-core) for available servic
 ```
 
 - Update application
-*Updates the application and all its services*
+*Updates the application and all its added services*
 ```bash
 ./weave.sh update
+```
+
+- Update weave
+*Updates weave-core and weave available-services*
+```bash
+./weave-update.sh
 ```
 
 - Add service
