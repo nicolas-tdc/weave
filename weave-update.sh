@@ -45,6 +45,7 @@ add_git_submodule() {
 update_git_submodules() {
     # Update the submodules
     git submodule update --init --recursive
+    git submodule sync --recursive
     # Pull the latest changes from the main branch of each submodule
     git submodule foreach --recursive '
         echo "Updating submodule: $name"
