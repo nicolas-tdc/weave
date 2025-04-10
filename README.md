@@ -85,8 +85,8 @@ See instructions found in the readme files of your added services
 ./weave.sh r
 ```
 Options:
-* Development mode : -d|-dev
-* Single service execution : --s=<service-name>|--service=<service-name>
+** Development mode : -d|-dev
+** Single service execution : --s=<service-name>|--service=<service-name>
 
 - k | kill
 
