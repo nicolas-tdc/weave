@@ -113,7 +113,7 @@ Options:
 
 *Single service execution* : --s=<service-name> | --service=<service-name>
 
-- add | add-service
+- **add | add-service**
 
 *Prompts user to select a service and service name, then adds it to the application*
 ```bash
