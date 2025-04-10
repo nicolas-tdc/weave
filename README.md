@@ -1,8 +1,11 @@
 # weave
 
 [Initialize your application](#initialize-your-application)
+
 [Setup your application](#setup-your-application)
+
 [Add services to your application](#add-services-to-your-application)
+
 [Available scripts and commands](#available-scripts-and-commands)
 
 ## Initialize your application
