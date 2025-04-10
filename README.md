@@ -63,7 +63,7 @@ See instructions found in the readme files of your added services
 
 *Or in weave's default service's readme file*
 
-[default-service-readme](./weave-core/default-service/README.md)
+[default-service-readme](https://github.com/nicolas-tdc/weave-core/blob/main/default-service/README.md)
 
 ## Available scripts and commands
 **Execute from your application's root directory**
