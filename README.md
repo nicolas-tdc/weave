@@ -85,7 +85,9 @@ See instructions found in the readme files of your added services
 ./weave.sh r
 ```
 Options:
+
 *Development mode* : -d|-dev
+
 *Single service execution* : --s=<service-name>|--service=<service-name>
 
 - k | kill
@@ -95,7 +97,9 @@ Options:
 ./weave.sh k
 ```
 Options:
+
 *Development mode* : -d|-dev
+
 *Single service execution* : --s=<service-name>|--service=<service-name>
 
 - upd | update
@@ -105,7 +109,9 @@ Options:
 ./weave.sh upd
 ```
 Options:
+
 *Development mode* : -d|-dev
+
 *Single service execution* : --s=<service-name>|--service=<service-name>
 
 - add | add-service
@@ -122,7 +128,9 @@ Options:
 ./weave.sh bak
 ```
 Options:
+
 *Development mode* : -d|-dev
+
 *Single service execution* : --s=<service-name>|--service=<service-name>
 
 - bak-on | backup-enable
