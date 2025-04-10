@@ -38,12 +38,12 @@ git push -u origin main
 ## Setup your application   
 *To do after initializing your application or cloning it from your repository*
 
-- Install and update weave
+- **Install and update weave**
 ```bash
 ./weave-update.sh
 ```
 
-- Copy environment file
+- **Copy environment file**
 
 *This environment file will provide your custom common variables to all services containers*
 ```bash
@@ -52,7 +52,7 @@ cp .env.dist .env
 
 ## Add services to your application
 
-- Add services
+- **Add services**
 
 *This will prompt you to select and name a new service for your application*
 ```bash
@@ -60,7 +60,7 @@ cp .env.dist .env
 ```
 See [weave-core](https://github.com/nicolas-tdc/weave-core) for available services.
 
-- Setup services
+- **Setup services**
 
 See instructions found in the readme files of your added services
 
@@ -71,48 +71,48 @@ See instructions found in the readme files of your added services
 ## Available scripts and commands
 **Execute from your application's root directory**
 
-- weave-update.sh
+- **weave-update.sh**
 
 *Updates weave-core and weave available-services*
 ```bash
 ./weave-update.sh
 ```
 
-- r | run
+- **r | run**
 
 *Starts the application or service*
 ```bash
 ./weave.sh r
 ```
-Options:
+*Options*:
 
-*Development mode* : -d|-dev
+Development mode : -d|-dev
 
-*Single service execution* : --s=<service-name>|--service=<service-name>
+Single service execution : --s=<service-name>|--service=<service-name>
 
-- k | kill
+- **k | kill**
 
 *Stops the application or service*
 ```bash
 ./weave.sh k
 ```
-Options:
+*Options*:
 
-*Development mode* : -d|-dev
+Development mode : -d|-dev
 
-*Single service execution* : --s=<service-name>|--service=<service-name>
+Single service execution : --s=<service-name>|--service=<service-name>
 
-- upd | update
+- **upd | update**
 
 *Updates the application or service*
 ```bash
 ./weave.sh upd
 ```
-Options:
+*Options*:
 
-*Development mode* : -d|-dev
+Development mode : -d|-dev
 
-*Single service execution* : --s=<service-name>|--service=<service-name>
+Single service execution : --s=<service-name>|--service=<service-name>
 
 - add | add-service
 
@@ -121,17 +121,17 @@ Options:
 ./weave.sh add
 ```
 
-- bak | backup-task
+- **bak | backup-task**
 
 *Backups the application or service*
 ```bash
 ./weave.sh bak
 ```
-Options:
+*Options*:
 
-*Development mode* : -d|-dev
+Development mode : -d|-dev
 
-*Single service execution* : --s=<service-name>|--service=<service-name>
+Single service execution : --s=<service-name>|--service=<service-name>
 
 - bak-on | backup-enable
 
@@ -140,7 +140,7 @@ Options:
 ./weave.sh bak-on
 ```
 
-- bak-off | backup-disable
+- **bak-off | backup-disable**
 
 *Disables cron backups for the application and all its services*
 ```bash
