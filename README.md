@@ -1,5 +1,10 @@
 # weave
 
+[Initialize your application](#initialize-your-application)
+[Setup your application](#setup-your-application)
+[Add services to your application](#add-services-to-your-application)
+[Available scripts and commands](#available-scripts-and-commands)
+
 ## Initialize your application
 
 - Clone weave repository to your chosen application's folder
@@ -23,12 +28,12 @@ git init
 git add .
 git commit -m "Initial commit"
 git branch -M main
-git remote add origin <your_github_repository>
+git remote add origin <your_git_repository>
 git push -u origin main
 ```
 
 ## Setup your application   
-*To do after initializing your application or after cloning your own application repository*
+*To do after initializing your application or cloning it from your repository*
 
 - Install and update weave
 ```bash
@@ -60,80 +65,71 @@ See instructions found in the readme files of your added services
 
 [default-service-readme](./weave-core/default-service/README.md)
 
-## List of available commands
-**Execute from application's root directory**
+## Available scripts and commands
+**Execute from your application's root directory**
 
-- Start application
-
-*Starts the application and all its services*
-```bash
-./weave.sh start
-```
-
-- Start service
-
-*Starts a single service*
-```bash
-./weave.sh start service_name
-```
-
-- Stop application
-
-*Stops the application and all its services*
-```bash
-./weave.sh stop
-```
-
-- Stop service
-
-*Stops a single service*
-```bash
-./weave.sh stop service_name
-```
-
-- Update application
-
-*Updates the application and all its added services*
-```bash
-./weave.sh update
-```
-
-- Update weave
+- weave-update.sh
 
 *Updates weave-core and weave available-services*
 ```bash
 ./weave-update.sh
 ```
 
-- Add service
+- r | run
+
+*Starts the application or service*
+```bash
+./weave.sh r
+```
+Options:
+* Development mode : -d|-dev
+* Single service execution : --s=<service-name>|--service=<service-name>
+
+- k | kill
+
+*Stops the application or service*
+```bash
+./weave.sh k
+```
+Options:
+* Development mode : -d|-dev
+* Single service execution : --s=<service-name>|--service=<service-name>
+
+- upd | update
+
+*Updates the application or service*
+```bash
+./weave.sh upd
+```
+Options:
+* Development mode : -d|-dev
+* Single service execution : --s=<service-name>|--service=<service-name>
+
+- add | add-service
 
 *Prompts user to select a service and service name, then adds it to the application*
 ```bash
 ./weave.sh add
 ```
 
-- Backup application
+- bak | backup-task
 
-*Backups the application and all its services*
+*Backups the application or service*
 ```bash
 ./weave.sh bak
 ```
+Options:
+* Development mode : -d|-dev
+* Single service execution : --s=<service-name>|--service=<service-name>
 
-- Backup service
-
-*Backups a single service*
-```bash
-./weave.sh bak service_name
-```
-
-- Enable cron for backup task
+- bak-on | backup-enable
 
 *Enables cron backups for the application and all its services*
 ```bash
 ./weave.sh bak-on
 ```
 
-- Disable cron for backup task
+- bak-off | backup-disable
 
 *Disables cron backups for the application and all its services*
 ```bash

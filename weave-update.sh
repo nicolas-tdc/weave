@@ -3,7 +3,7 @@
 # Exit immediately if a command exits with a non-zero status
 set -e
 
-# This script is used to update weave-core.
+# This script is used to install and update weave-core.
 
 # Function: add_git_submodule
 # Purpose: Adds a git submodule if it doesn't already exist.
