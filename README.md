@@ -64,8 +64,7 @@ See [weave-core](https://github.com/nicolas-tdc/weave-core) for available servic
 
 See instructions found in the readme files of your added services
 
-*Or in weave's default service's readme file*
-
+*Or in weave's default service's readme file:*
 [default-service-readme](https://github.com/nicolas-tdc/weave-core/blob/main/default-service/README.md)
 
 ## Available scripts and commands
@@ -73,46 +72,46 @@ See instructions found in the readme files of your added services
 
 - **weave-update.sh**
 
-*Updates weave-core and weave available-services*
+Updates weave-core and weave available-services
 ```bash
 ./weave-update.sh
 ```
 
 - **r | run**
 
-*Starts the application or service*
+Starts the application or service
 ```bash
 ./weave.sh r
 ```
-*Options*:
+Options:
 
-Development mode : -d|-dev
+*Development mode* : -d | -dev
 
-Single service execution : --s=<service-name>|--service=<service-name>
+*Single service execution* : --s=<service-name> | --service=<service-name>
 
 - **k | kill**
 
-*Stops the application or service*
+Stops the application or service
 ```bash
 ./weave.sh k
 ```
-*Options*:
+Options:
 
-Development mode : -d|-dev
+*Development mode* : -d | -dev
 
-Single service execution : --s=<service-name>|--service=<service-name>
+*Single service execution* : --s=<service-name> | --service=<service-name>
 
 - **upd | update**
 
-*Updates the application or service*
+Updates the application or service
 ```bash
 ./weave.sh upd
 ```
-*Options*:
+Options:
 
-Development mode : -d|-dev
+*Development mode* : -d | -dev
 
-Single service execution : --s=<service-name>|--service=<service-name>
+*Single service execution* : --s=<service-name> | --service=<service-name>
 
 - add | add-service
 
@@ -123,26 +122,26 @@ Single service execution : --s=<service-name>|--service=<service-name>
 
 - **bak | backup-task**
 
-*Backups the application or service*
+Backups the application or service
 ```bash
 ./weave.sh bak
 ```
-*Options*:
+Options:
 
-Development mode : -d|-dev
+*Development mode* : -d | -dev
 
-Single service execution : --s=<service-name>|--service=<service-name>
+*Single service execution* : --s=<service-name> | --service=<service-name>
 
-- bak-on | backup-enable
+- **bak-on | backup-enable**
 
-*Enables cron backups for the application and all its services*
+Enables cron backups for the application and all its services
 ```bash
 ./weave.sh bak-on
 ```
 
 - **bak-off | backup-disable**
 
-*Disables cron backups for the application and all its services*
+Disables cron backups for the application and all its services
 ```bash
 ./weave.sh bak-off
 ```
