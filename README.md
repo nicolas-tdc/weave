@@ -10,22 +10,22 @@
 
 ## Initialize your application
 
-- Clone weave repository to your chosen application's folder
+- **Clone weave repository to your chosen application's folder**
 ```bash
 git clone git@github.com:nicolas-tdc/weave.git <path/to/my-app>
 ```
 
-- Move to your new application's root directory
+- **Move to your new application's root directory**
 ```bash
 cd <path/to/my-app>
 ```
 
-- Unlink your application from weave's git repository
+- **Unlink your application from weave's git repository**
 ```bash
 rm -rf .git
 ```
 
-- Link your application to your own application repository
+- **Link your application to your own application repository**
 ```bash
 git init
 git add .
