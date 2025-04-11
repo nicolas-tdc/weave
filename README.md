@@ -43,11 +43,11 @@ git push -u origin main
 ./weave-update.sh
 ```
 
-- **Copy environment file**
+- **Copy environment files**
 
-*This environment file will provide your custom common variables to all services containers*
+*These environment files will provide your common and environment specific variables to all services containers*
 ```bash
-cp .env.dist .env
+cp ./default-env/* ./
 ```
 
 ## Add services to your application

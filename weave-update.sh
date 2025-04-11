@@ -64,10 +64,10 @@ add_git_submodule git@github.com:nicolas-tdc/weave-core.git weave-core
 update_git_submodules
 
 # Update weave.sh with updated weave-core file
-if [ -f "./weave-core/weave.sh.dist" ]; then
+if [ -f "./weave-core/weave.sh" ]; then
     echo -e "\e[33mUpdating weave.sh...\e[0m"
 
-    cp ./weave-core/weave.sh.dist ./weave.sh
+    cp ./weave-core/weave.sh ./weave.sh
     chmod 755 ./weave.sh
 
     echo -e "\e[32mweave.sh updated successfully!\e[0m"

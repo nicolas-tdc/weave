@@ -1,6 +1,6 @@
 # Application specifics
 
-.env
+/.env*
 weave.sh
 
 # Services specifics
