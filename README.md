@@ -101,18 +101,6 @@ Options:
 
 *Single service execution* : --s=<service-name> | --service=<service-name>
 
-- **upd | update**
-
-Updates the application or service
-```bash
-./weave.sh upd
-```
-Options:
-
-*Development mode* : -d | -dev
-
-*Single service execution* : --s=<service-name> | --service=<service-name>
-
 - **add | add-service**
 
 *Prompts user to select a service and service name, then adds it to the application*

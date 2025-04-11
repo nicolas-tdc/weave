@@ -35,30 +35,17 @@ add_git_submodule() {
     fi
 }
 
-# Function: update_git_submodules
-# Purpose: Updates all git submodules to the latest version.
-# Arguments: None
-# Returns:
-#   0: If all submodules were updated successfully.
-#   1: If there was an error updating any submodule.
-# Usage: update_git_submodules
-update_git_submodules() {
-    # Update the submodules
-    git submodule update --init --recursive
-    git submodule sync --recursive
-    # Pull the latest changes from the main branch of each submodule
-    git submodule foreach --recursive '
-        echo "Updating submodule: $name"
-        git fetch
-        git checkout main 2>/dev/null || git checkout master 2>/dev/null || echo "No main/master branch for $name"
-        git pull || echo "Failed to pull in $name"
-    '
-}
-
 echo -e "\e[32mUpdating weave...\e[0m"
 
 # Add weave-core submodule if it doesn't exist
 add_git_submodule git@github.com:nicolas-tdc/weave-core.git weave-core
+
+if [ -f "./weave-core/helpers/git.sh" ]; then
+    source ./weave-core/helpers/git.sh
+else
+    echo -e "\e[31mError: weave-core/helpers/git.sh not found.\e[0m"
+    exit 1
+fi
 
 # Update weave-core
 update_git_submodules
