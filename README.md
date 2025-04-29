@@ -47,6 +47,7 @@ cp ./default-env/* ./
 
 Modify default-env files for remote modifications
 
+Copy env files to the service's root directory.
 Modify root environment files for local modifications
 
 - **Install and update weave**
@@ -66,10 +67,7 @@ See [weave-core](https://github.com/nicolas-tdc/weave-core) for available servic
 
 - **Setup services**
 
-See instructions found in the readme files of your added services
-
-*Or in weave's default service's readme file:*
-[default-service-readme](https://github.com/nicolas-tdc/weave-core/blob/main/default-service/README.md)
+See instructions found in the readme files of each of your added services
 
 ## Available scripts and commands
 **Execute from your application's root directory**
@@ -87,10 +85,7 @@ Starts the application or service
 ```bash
 ./weave.sh r
 ```
-Options:
-
 *Development mode* : -d | -dev
-
 *Single service execution* : --s=<service-name> | --service=<service-name>
 
 - **k | kill**
@@ -99,10 +94,7 @@ Stops the application or service
 ```bash
 ./weave.sh k
 ```
-Options:
-
 *Development mode* : -d | -dev
-
 *Single service execution* : --s=<service-name> | --service=<service-name>
 
 - **add | add-service**
@@ -118,10 +110,7 @@ Backups the application or service
 ```bash
 ./weave.sh bak
 ```
-Options:
-
 *Development mode* : -d | -dev
-
 *Single service execution* : --s=<service-name> | --service=<service-name>
 
 - **bak-on | backup-enable**
