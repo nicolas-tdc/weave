@@ -38,16 +38,8 @@ git push -u origin main
 ## Setup your application   
 *To do after initializing your application or cloning it from your repository*
 
-- **Copy environment files**
-
-*These environment files will provide your common and environment specific variables to all services containers*
-```bash
-cp ./default-env/* ./
-```
-
 Modify default-env files for remote modifications
 
-Copy env files to the service's root directory.
 Modify root environment files for local modifications
 
 - **Install and update weave**
