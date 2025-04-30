@@ -44,7 +44,7 @@ Modify root environment files for local modifications
 
 - **Install and update weave**
 ```bash
-./weave-update.sh
+./update-weave.sh
 ```
 
 ## Add services to your application
@@ -64,11 +64,11 @@ See instructions found in the readme files of each of your added services
 ## Available scripts and commands
 **Execute from your application's root directory**
 
-- **weave-update.sh**
+- **update-weave.sh**
 
 Updates weave-core and weave available-services
 ```bash
-./weave-update.sh
+./update-weave.sh
 ```
 
 - **r | run**
