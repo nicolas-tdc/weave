@@ -38,8 +38,8 @@ add_git_submodule() {
 echo -e "\e[32mUpdating weave...\e[0m"
 
 # Copy default environment files to service's root directory
-if [ -d "./default-env" ]; then
-    for file in ./default-env/.*; do
+if [ -d "./env-remote" ]; then
+    for file in ./env-remote/.*; do
         [ -f "$file" ] && [ ! -e "./$(basename "$file")" ] && cp -n "$file" ./
     done
 fi

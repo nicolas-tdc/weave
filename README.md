@@ -38,7 +38,7 @@ git push -u origin main
 ## Setup your application   
 *To do after initializing your application or cloning it from your repository*
 
-Modify default-env files for remote modifications
+Modify env-remote files for remote modifications
 
 Modify root environment files for local modifications
 
