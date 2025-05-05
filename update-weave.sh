@@ -37,13 +37,6 @@ add_git_submodule() {
 
 echo -e "\e[32mUpdating weave...\e[0m"
 
-# Copy default environment files to service's root directory
-if [ -d "./env-remote" ]; then
-    for file in ./env-remote/.*; do
-        [ -f "$file" ] && [ ! -e "./$(basename "$file")" ] && cp -n "$file" ./
-    done
-fi
-
 # Add weave-core submodule if it doesn't exist
 add_git_submodule git@github.com:nicolas-tdc/weave-core.git weave-core
 

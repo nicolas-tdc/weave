@@ -38,9 +38,7 @@ git push -u origin main
 ## Setup your application   
 *To do after initializing your application or cloning it from your repository*
 
-Modify env-remote files for remote modifications
-
-Modify root environment files for local modifications
+Modify environment files if needed.
 
 - **Install and update weave**
 ```bash
