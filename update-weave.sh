@@ -56,8 +56,6 @@ if [ -f "./weave-core/weave.sh" ]; then
 
     cp ./weave-core/weave.sh ./weave.sh
     chmod 755 ./weave.sh
-
-    echo -e "\e[32mweave.sh updated successfully!\e[0m"
 fi
 
 echo -e "\e[32mweave updated successfully!\e[0m"
