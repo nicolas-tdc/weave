@@ -150,7 +150,7 @@ Disables cron backups for the application and all its services
 
 ### Back-end
 
-[javalin](https://github.com/nicolas-tdc/weave-javalin)
+[go](https://github.com/nicolas-tdc/weave-go)
 
 ### Front-end
 
@@ -165,3 +165,7 @@ Disables cron backups for the application and all its services
 ### Media
 
 [navidrome](https://github.com/nicolas-tdc/weave-navidrome)
+
+## Proxy
+
+[nginx](https://github.com/nicolas-tdc/weave-nginx)
