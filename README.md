@@ -56,7 +56,6 @@ Modify environment files if needed.
 ./weave.sh add-service
 ```
 See [Available services](#available-services).
-You can add your own git repositories in the weave.conf file "available-services" section.
 
 - **Setup services**
 
@@ -111,6 +110,7 @@ Stops the application or service
 ```bash
 ./weave.sh add-service
 ```
+*See [Available services](#available-services).*
 
 - **rm-service**
 
@@ -147,6 +147,8 @@ Disables cron backups for the application and all its services
 ```
 
 ## Available services
+
+*You can add your own git repositories as available services in the weave.conf file "available-services" section.*
 
 ### Back-end
 
