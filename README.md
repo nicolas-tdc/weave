@@ -112,6 +112,13 @@ Stops the application or service
 ./weave.sh add-service
 ```
 
+- **rm-service**
+
+*Removes the service from the application*
+```bash
+./weave.sh rm-service <service_name>
+```
+
 - **backup**
 
 **WIP**
