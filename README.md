@@ -8,6 +8,8 @@
 
 [Available scripts and commands](#available-scripts-and-commands)
 
+[Available services](#available-services)
+
 ## Initialize your application
 
 - **Clone weave repository to your chosen application's folder**
@@ -40,7 +42,7 @@ git push -u origin main
 
 Modify environment files if needed.
 
-- **Install and update weave**
+- **Install and/or update weave**
 ```bash
 ./update-weave.sh
 ```
@@ -51,13 +53,24 @@ Modify environment files if needed.
 
 *This will prompt you to select and name a new service for your application*
 ```bash
-./weave.sh add
+./weave.sh add-service
 ```
-See [weave-core](https://github.com/nicolas-tdc/weave-core) for available services.
+See [Available services](#available-services).
+You can add your own git repositories in the weave.conf file "available-services" section.
 
 - **Setup services**
 
 See instructions found in the readme files of each of your added services
+
+To connect your services to each other, add networks to their docker-compose files.
+The networks will be automatically added or removed by weave.
+
+## Run and kill your application
+
+```bash
+./weave.sh run
+./weave.sh kill
+```
 
 ## Available scripts and commands
 **Execute from your application's root directory**
@@ -69,50 +82,79 @@ Updates weave-core and weave available-services
 ./update-weave.sh
 ```
 
-- **r | run**
+- **run**
 
-Starts the application or service
+Starts the application or service.
+When starting the application, services are executed in the order defined in the weave.conf file.
+You can also add a sleep line between services:
+sleep=<seconds>
 ```bash
-./weave.sh r
+./weave.sh run
 ```
-*Development mode* : -d | -dev
-*Single service execution* : --s=<service-name> | --service=<service-name>
+*Development mode*: -dev
+*Staging mode*: -staging
+*Single service execution* : --s=<service-name>
 
-- **k | kill**
+- **kill**
 
 Stops the application or service
 ```bash
-./weave.sh k
+./weave.sh kill
 ```
-*Development mode* : -d | -dev
-*Single service execution* : --s=<service-name> | --service=<service-name>
+*Development mode*: -dev
+*Staging mode*: -staging
+*Single service execution* : --s=<service-name>
 
-- **add | add-service**
+- **add-service**
 
 *Prompts user to select a service and service name, then adds it to the application*
 ```bash
-./weave.sh add
+./weave.sh add-service
 ```
 
-- **bak | backup-task**
+- **backup**
 
+**WIP**
 Backups the application or service
 ```bash
-./weave.sh bak
+./weave.sh backup
 ```
-*Development mode* : -d | -dev
-*Single service execution* : --s=<service-name> | --service=<service-name>
+*Development mode*: -dev
+*Staging mode*: -staging
+*Single service execution* : --s=<service-name>
 
-- **bak-on | backup-enable**
+- **backup-enable**
 
+**WIP**
 Enables cron backups for the application and all its services
 ```bash
-./weave.sh bak-on
+./weave.sh backup-enable
 ```
 
-- **bak-off | backup-disable**
+- **backup-disable**
 
+**WIP**
 Disables cron backups for the application and all its services
 ```bash
-./weave.sh bak-off
+./weave.sh backup-disable
 ```
+
+## Available services
+
+### Back-end
+
+[javalin](https://github.com/nicolas-tdc/weave-javalin)
+
+### Front-end
+
+[vanillajs](https://github.com/nicolas-tdc/weave-vanillajs)
+
+### Database
+
+[mongo](https://github.com/nicolas-tdc/weave-mongo)
+
+[mongo-express](https://github.com/nicolas-tdc/weave-mongo-express)
+
+### Media
+
+[navidrome](https://github.com/nicolas-tdc/weave-navidrome)
