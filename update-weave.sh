@@ -52,8 +52,6 @@ update_git_submodules
 
 # Update weave.sh with updated weave-core file
 if [ -f "./weave-core/weave.sh" ]; then
-    echo -e "\e[33mUpdating weave.sh...\e[0m"
-
     cp ./weave-core/weave.sh ./weave.sh
     chmod 755 ./weave.sh
 fi
