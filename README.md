@@ -166,6 +166,6 @@ Disables cron backups for the application and all its services
 
 [navidrome](https://github.com/nicolas-tdc/weave-navidrome)
 
-## Proxy
+### Proxy
 
 [nginx](https://github.com/nicolas-tdc/weave-nginx)
