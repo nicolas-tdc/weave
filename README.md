@@ -2,6 +2,8 @@
 
 Weave is a lightweight Bash framework designed for personal learning projects and small-scale applications. It helps you quickly scaffold, manage, and run Docker-based services through a simple CLI. With modular service integration, environment setup tools, and runnable presets, Weave makes it easy to prototype and maintain personal apps or experiments.
 
+## Summary
+
 [Initialize your application](#initialize-your-application)
 
 [Setup your application](#setup-your-application)
